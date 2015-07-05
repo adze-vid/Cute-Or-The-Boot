@@ -1,0 +1,22 @@
+<nav>
+	<a href="./">Total Votes</a>
+	<a class="active" href="./standings">Score</a>
+</nav>
+
+{{#if standings}}
+
+	<ul>
+
+		{{#each standings}}
+		
+		<li>
+			<img src="photos/{{name}}" alt="Animal picture thumbnail" />
+			<p class="up">{{this.likes}}</p>
+			<p class="down">{{this.dislikes}}</p>
+		</li>
+
+		{{/each}}
+
+	</ul>
+
+{{/if}}
